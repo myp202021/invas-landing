@@ -353,11 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2 class="lp-title" style="margin-bottom:12px;">Hablemos de tu operaci&oacute;n</h2>
   <p class="lp-subtitle" style="color:rgba(255,255,255,0.4);">Un especialista te contactar&aacute; en menos de 24 horas para coordinar una demo personalizada.</p>
   <div class="lp-form-wrap">
-    <form action="https://formsubmit.co/contacto@impruvex.com" method="POST">
-      <input type="hidden" name="_subject" value="&#128309; Nueva solicitud demo WMS — invaswms.com/solicita-demo">
-      <input type="hidden" name="_cc" value="contacto@invaswms.com,contacto@mulleryperez.cl">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://landing.invaswms.com/gracias.html">
+    <form action="/api/contact" method="POST">
       <div class="lp-form-row">
         <div><label>Nombre *</label><input type="text" name="nombre" required placeholder="Tu nombre completo"></div>
         <div><label>Empresa *</label><input type="text" name="empresa" required placeholder="Nombre de tu empresa"></div>
