@@ -359,15 +359,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div><label>Empresa *</label><input type="text" name="empresa" required placeholder="Nombre de tu empresa"></div>
       </div>
       <div class="lp-form-row">
-        <div><label>Email *</label><input type="email" name="email" required placeholder="tu@empresa.com"></div>
+        <div><label>Email corporativo *</label><input type="email" name="email" required placeholder="tu@empresa.com"></div>
         <div><label>Tel&eacute;fono *</label><input type="tel" name="telefono" required placeholder="+56 9 ..."></div>
       </div>
       <div class="lp-form-row">
-        <div><label>Pa&iacute;s</label><select name="pais"><option>Chile</option><option>Colombia</option><option>M&eacute;xico</option><option>Estados Unidos</option><option>Otro</option></select></div>
-        <div><label>Sitios / CDs</label><select name="sitios"><option>1 sitio</option><option>2 a 5</option><option>6 a 20</option><option>M&aacute;s de 20</option></select></div>
+        <div><label>Cargo en la empresa *</label><input type="text" name="cargo" required placeholder="Ej: Jefe de Bodega, Gerente Log&iacute;stica"></div>
+        <div><label>Tama&ntilde;o de la empresa *</label><select name="tamano" required><option value="" disabled selected>Seleccionar</option><option value="1-50">1 a 50 empleados</option><option value="51-200">51 a 200 empleados</option><option value="201-500">201 a 500 empleados</option><option value="501-1000">501 a 1.000 empleados</option><option value="1000+">M&aacute;s de 1.000 empleados</option></select></div>
       </div>
-      <label>¿Qu&eacute; desaf&iacute;o quieres resolver?</label>
-      <textarea name="mensaje" rows="3" placeholder="Cu&eacute;ntanos brevemente..."></textarea>
+      <div class="lp-form-row">
+        <div><label>Pa&iacute;s</label><select name="pais"><option value="" disabled selected>Seleccionar pa&iacute;s</option><option value="chile">Chile</option><option value="colombia">Colombia</option><option value="mexico">M&eacute;xico</option><option value="usa">Estados Unidos</option><option value="peru">Per&uacute;</option><option value="otro">Otro</option></select></div>
+        <div><label>Sitios / CDs</label><select name="sitios"><option value="" disabled selected>Cantidad de sitios</option><option value="1">1 sitio</option><option value="2-5">2 a 5</option><option value="6-20">6 a 20</option><option value="20+">M&aacute;s de 20</option></select></div>
+      </div>
+      <label>Principal desaf&iacute;o log&iacute;stico *</label>
+      <select name="desafio" required>
+        <option value="" disabled selected>Seleccionar desaf&iacute;o</option>
+        <option value="control-inventario">Control de inventario</option>
+        <option value="errores-despacho">Errores en despacho</option>
+        <option value="trazabilidad">Trazabilidad</option>
+        <option value="crecimiento-operacion">Crecimiento de la operaci&oacute;n</option>
+        <option value="implementar-wms">Busco implementar un WMS</option>
+        <option value="otro">Otro</option>
+      </select>
       <button type="submit" class="lp-form-btn">Hablemos de tu operaci&oacute;n &rarr;</button>
     </form>
   </div>
