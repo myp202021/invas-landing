@@ -398,5 +398,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!--  ; -->
+<script>
+(function(){var e=new URLSearchParams(location.search).get('error');if(!e)return;
+var m=e==='envio'?'No pudimos enviar tu solicitud. Por favor escr&iacute;benos por <a href="https://wa.me/56973704306" style="color:#fff;text-decoration:underline">WhatsApp</a> o int&eacute;ntalo de nuevo.':'Completa nombre, empresa, email y tel&eacute;fono para enviar tu solicitud.';
+var d=document.createElement('div');d.setAttribute('role','alert');d.style.cssText='position:fixed;top:0;left:0;right:0;z-index:9999;background:#b91c1c;color:#fff;padding:14px 18px;text-align:center;font:15px/1.4 sans-serif';d.innerHTML=m;document.body.appendChild(d);})();
+</script>
 </body>
 </html>
