@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         from: 'invasWMS Landing <contacto@mulleryperez.cl>',
         to: ['contacto@impruvex.com', 'cvilo@impruvex.com', 'mfierro@impruvex.com'],
-        cc: ['contacto@invaswms.com'],
+        cc: ['contacto@invaswms.com', 'contacto@mulleryperez.cl'],
         reply_to: email,
         subject: `🔴 Nueva solicitud demo WMS — ${empresa}`,
         html: `
